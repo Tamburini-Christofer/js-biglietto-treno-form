@@ -9,10 +9,13 @@
 </head>
 
 <body>
-    <header>    
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>  
-        <form action="" id="formBiglietto">
-        <div class="contenitore up"> 
+
+    <header>
+
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+        <form action="#" id="formBiglietto">
+            <div class="contenitore up">
                 <div>
                     <span>Nome Cognome</span>
                     <input type="text" placeholder="Nome e Cognome" id="nomePasseggero">
@@ -28,45 +31,55 @@
                         <option value="2">18-64 Anni</option>
                         <option value="3">65 anni in sù</option>
                     </select>
-                </div>      
-            <div>
-                <button id="generaBiglietto">Genera</button>
-                <button id="reset">Annulla</button>
-            </div> 
-        </div>
-    </form>
+                </div>
+
+    <!--Bottoni-->
+
+                <div>
+                    <button id="generaBiglietto">Genera</button>
+                    <button id="reset">Annulla</button>
+                </div>
+            </div>
+        </form>
     </header>
 
-        <h2>IL TUO BIGLIETTO PER IL CRAZY TRAIN!!!</h2>
+    <h2>IL TUO BIGLIETTO PER IL CRAZY TRAIN!!!</h2>
 
-        <div class="contenitore down">
-            <div class="col_sx">
-                <div>NOME PASSEGGERO</div>
-                <span id="nome_passeggero"></span>
-                <img src="img/Q_code.jpg" alt="Q_code biglietto" id="q_code">
-            </div>
-            <div class="col_dx">
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Biglietto</th>
-                            <th>Carrozza</th>
-                            <th>Codice CP</th>
-                            <th>Costo biglietto</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                           <td id="tipoBiglietto"></td> 
-                           <td id="carrozza"></td> 
-                           <td id="codiceCP"></td> 
-                           <td id="costo_biglietto"></td> 
-                        </tr>
-                    </tfoot>
-                </table>
-            </div>
+     <!--Informazioni passeggero-->
+
+
+    <div class="contenitore down">
+        <div class="col_sx">
+            <div>NOME PASSEGGERO</div>
+            <span id="nome_passeggero"></span>
+            <img src="img/Q_code.jpg" alt="Q_code biglietto" id="q_code">
         </div>
-    </body>
-<script type="text/javascript" src="javaScript/calcoliBiglietto.js"></script>
+        <div class="col_dx">
+        
+    <!--Tabella biglietto-->
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Biglietto</th>
+                        <th>Carrozza</th>
+                        <th>Codice CP</th>
+                        <th>Costo biglietto</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td id="tipoBiglietto"></td>
+                        <td id="carrozza"></td>
+                        <td id="codiceCP"></td>
+                        <td id="costo_biglietto"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+        <script type="text/javascript" src="javaScript/calcoliBiglietto.js"> </script>
+    </div>
+</body>
+
 
 </html>

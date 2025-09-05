@@ -29,7 +29,6 @@ function calcoloSconto (valueKm, valueAge) {
         prezzo: prezzoFinale.toFixed(2),
         tipo: tipoBiglietto
     };
-
 }
 
 /******************************************************************************************** */
