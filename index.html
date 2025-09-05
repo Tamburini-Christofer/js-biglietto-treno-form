@@ -10,9 +10,9 @@
 
 <body>
     <header>    
-        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>  
+        <form action="" id="formBiglietto">
         <div class="contenitore up"> 
-            <form action="" class="formBiglietto">
                 <div>
                     <span>Nome Cognome</span>
                     <input type="text" placeholder="Nome e Cognome" id="nomePasseggero">
@@ -32,10 +32,9 @@
             <div>
                 <button id="generaBiglietto">Genera</button>
                 <button id="reset">Annulla</button>
-            </div>
-            </form>
+            </div> 
         </div>
-        
+    </form>
     </header>
 
         <h2>IL TUO BIGLIETTO PER IL CRAZY TRAIN!!!</h2>
@@ -43,14 +42,14 @@
         <div class="contenitore down">
             <div class="col_sx">
                 <div>NOME PASSEGGERO</div>
-                <span class="nome_passeggero">Qui verrà il nome</span>
+                <span id="nome_passeggero"></span>
                 <img src="img/Q_code.jpg" alt="Q_code biglietto" id="q_code">
             </div>
             <div class="col_dx">
                 <table>
                     <thead>
                         <tr>
-                            <th>Offerta</th>
+                            <th>Biglietto</th>
                             <th>Carrozza</th>
                             <th>Codice CP</th>
                             <th>Costo biglietto</th>
@@ -58,10 +57,10 @@
                     </thead>
                     <tfoot>
                         <tr>
-                           <td id="tipoBiglietto">Qui valore biglietto</td> 
-                           <td id="carrozza">Random carrozza</td> 
-                           <td id="codiceCP">Random codice</td> 
-                           <td id="costo_biglietto">Qui valore biglietto</td> 
+                           <td id="tipoBiglietto"></td> 
+                           <td id="carrozza"></td> 
+                           <td id="codiceCP"></td> 
+                           <td id="costo_biglietto"></td> 
                         </tr>
                     </tfoot>
                 </table>
