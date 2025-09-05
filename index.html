@@ -11,32 +11,40 @@
 <body>
     <header>    
         <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
-        <div class="contenitore up">
+        <div class="contenitore up"> 
+            <form action="" class="formBiglietto">
+                <div>
+                    <span>Nome Cognome</span>
+                    <input type="text" placeholder="Nome e Cognome" id="nomePasseggero">
+                </div>
+                <div>
+                    <span>Km da percorrere</span>
+                    <input type="text" placeholder="Numero km" id="km">
+                </div>
+                <div>
+                    <span>Fascia età</span>
+                    <select id="eta">
+                        <option value="1">0-17 Anni</option>
+                        <option value="2">18-64 Anni</option>
+                        <option value="3">65 anni in sù</option>
+                    </select>
+                </div>      
             <div>
-                <span>Nome Cognome</span>
-                <input type="text" placeholder="Nome e Cognome">
+                <button id="generaBiglietto">Genera</button>
+                <button id="reset">Annulla</button>
             </div>
-            <div>
-                <span>Km da percorrere</span>
-                <input type="text" placeholder="Numero km">
-            </div>
-            <div>
-                <span>Fascia d'età</span>
-                <select type="select" placeholder="Seleziona"> 
-                </select>
-            </div>     
-        <div>
-            <button>Genera</button>
-            <button>Annulla</button>
+            </form>
         </div>
-        </div>
+        
+    </header>
 
-        <h2>IL TUO BIGLIETTO</h2>
+        <h2>IL TUO BIGLIETTO PER IL CRAZY TRAIN!!!</h2>
 
         <div class="contenitore down">
             <div class="col_sx">
                 <div>NOME PASSEGGERO</div>
                 <span class="nome_passeggero">Qui verrà il nome</span>
+                <img src="img/Q_code.jpg" alt="Q_code biglietto" id="q_code">
             </div>
             <div class="col_dx">
                 <table>
@@ -50,28 +58,16 @@
                     </thead>
                     <tfoot>
                         <tr>
-                           <td>Qui valore biglietto</td> 
-                           <td>Random carrozza</td> 
-                           <td>Random codice</td> 
-                           <td>Qui valore biglietto</td> 
+                           <td id="tipoBiglietto">Qui valore biglietto</td> 
+                           <td id="carrozza">Random carrozza</td> 
+                           <td id="codiceCP">Random codice</td> 
+                           <td id="costo_biglietto">Qui valore biglietto</td> 
                         </tr>
                     </tfoot>
-             
-
                 </table>
             </div>
         </div>
-    </header>
+    </body>
+<script type="text/javascript" src="javaScript/calcoliBiglietto.js"></script>
 
-
-
-
-
-
-
-
-
-
-    <!-- <script type="text/javascript" src="main.js"></script> -->
-</body>
 </html>
