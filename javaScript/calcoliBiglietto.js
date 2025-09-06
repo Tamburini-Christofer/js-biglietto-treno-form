@@ -74,6 +74,7 @@ bigliettoForm.addEventListener("submit", (evento) => {
         outCarrozza.innerHTML = Math.floor(Math.random() * 8);
         CodCpBiglietto.innerHTML = Math.floor(Math.random() * 70000);
         outCostoBiglietto.innerHTML = prezzoBiglietto.prezzo + " Euro";
+
 });
 //Scriviamo Il Reset bottone
 bottoneReset.addEventListener("click", () => {

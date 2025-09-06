@@ -12,7 +12,8 @@ body{
 }
 
 h1,
-H2{
+H2,
+h5{
     color: rgb(0, 0, 0);
     text-align: center;
     margin: 20px 0px;
@@ -50,6 +51,7 @@ option{
     justify-content: space-around;
     align-items: center;
     border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 .down{
@@ -67,6 +69,11 @@ option{
     background-color: rgb(241, 182, 182);
     width: 40%;
     padding: 30px;
+}
+.col_sx div:last-child{
+    color: grey;
+    margin-top: 30px;
+    font-size: 8px;
 }
 .col_sx div {
     margin-bottom: 20px;
@@ -89,6 +96,7 @@ th{
 
 th,
 td{
+    text-align: center;
     border: 1px solid black;
     color: black;
     padding: 10px;
