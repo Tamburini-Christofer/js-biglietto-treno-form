@@ -77,8 +77,8 @@ bigliettoForm.addEventListener("submit", (evento) => {
 
 });
 //Scriviamo Il Reset bottone
-bottoneReset.addEventListener("click", () => {
-        bigliettoForm.reset();
+bottoneReset.addEventListener("click", (evento) => {
+        evento.reset();
         outPasseggero.innerHTML = "";
         outTipoBiglietto.innerHTML = "";
         outCarrozza.innerHTML = "";
